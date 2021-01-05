@@ -16,13 +16,10 @@ def calculate_score(board: chess.Board): # white = +, black = -
     if board.is_game_over():
         result = board.result()
         if result == "1-0":
-            print("Game over! White wins.")
             return 1000
         elif result == "0-1":
-            print("Game over! Black wins.")
             return -1000
         elif result == "1/2-1/2":
-            print("Game over! Stalemate.")
             return 0
     score = 0
     for square in chess.SQUARES:
