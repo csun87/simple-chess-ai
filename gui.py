@@ -1,7 +1,7 @@
+import time
 import pygame
 from settings import WIDTH, HEIGHT, FPS, LOGO
 from boardGUI import BoardGUI
-import time
 
 pygame.init()
 WIN = pygame.display.set_mode((WIDTH, HEIGHT))
